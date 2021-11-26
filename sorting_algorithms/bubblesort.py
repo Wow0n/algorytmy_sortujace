@@ -2,14 +2,10 @@ import time
 
 
 def bubble_sort(array):
-    swap = True
-
-    while swap:
-        swap = False
-        for i in range(len(array) - 1):
-            if array[i] > array[i + 1]:
-                array[i], array[i + 1] = array[i + 1], array[i]
-                swap = True
+    for i in range(len(array)):
+        for j in range(len(array) - 1):
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
 
 
 def begin_sorting_bubble(A):
