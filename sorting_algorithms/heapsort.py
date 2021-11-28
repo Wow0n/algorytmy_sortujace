@@ -40,5 +40,5 @@ def begin_sorting_heap(A):
     heap_sort(A)
     end = time.time()
 
-    result = round(end - begin, 9)
+    result = round(end - begin, 3)
     print(f"Czas wykonania: {result} s")

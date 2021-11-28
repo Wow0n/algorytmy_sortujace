@@ -22,7 +22,7 @@ def counting_sort(A, B, k):
 def begin_sorting_counting(A):
     begin = time.time()
     B = np.full(len(A), 0)
-    counting_sort(A, B, 3490)
+    counting_sort(A, B, len(A))
     end = time.time()
-    result = round(end - begin, 7)
+    result = round(end - begin, 3)
     print(f"Czas wykonania: {result} s")
